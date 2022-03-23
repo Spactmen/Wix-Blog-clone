@@ -1,0 +1,135 @@
+@import url('https://css.gg/more-vertical-alt.css');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    /* margin: 0 auto; */
+}
+
+.main-content{
+    margin: 40px 0 50px 0 ;
+    display:grid;
+    grid-template-columns: 45% 55%;
+    /* justify-content: end; */
+    /* border:1px solid red */
+}
+
+.main-img{
+    /* border: 1px solid green; */
+    max-width:90%;
+    text-align: center;;
+    /* margin-right: 20%; */
+    /* height:443px; */
+
+}
+
+.main-box-1{
+    max-width:50%;
+    margin-left: 15%;
+    border-bottom: 1px solid black;
+    /* font-weight: 300; */
+}
+.main-box-1 h2{
+    font-weight: 500;
+    font-size: 1.7rem;
+    letter-spacing: 0.02rem;
+}
+
+.main-box-2{
+    /* object-fit: cover; */
+    object-position: bottom;
+}
+
+.text{
+    color: black;
+    margin-top: 80%;
+    margin-left: 40px;
+    font-weight: 300;
+}
+
+.cards{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap:1rem;
+
+    /* border:1px solid red; */
+}
+              /*------card item*-------*/
+.image{
+   max-width:100%;
+    
+}
+             /* also try position relative*/
+.icon-position{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 30px 0 20px 0; */
+    padding:28px 0 13px 0;
+}
+
+.time{
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+
+.item-text{
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 2rem;
+    padding: 0 0 28px 0;
+    font-size: 1.1rem;
+}
+
+.items{
+    /* border: 1px solid red; */
+    /* width:31%; */
+    margin:5px;
+    max-width:350px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 5px; */
+    padding: 0.3rem;
+}
+
+hr{
+    width:90%;
+    margin: auto;
+}
+
+.main-box-1 h2:hover{
+    color: #1c7962;
+    cursor: pointer;
+}
+
+
+
+          /*  Media Queries */
+@media screen and (max-width:782px) {
+    .main-content{
+        display:block;
+    }
+    .main-box-1{
+        max-width: fit-content;
+    }
+    .text{
+        display:none;
+    }
+    .main-img{
+        max-width:90%;
+        margin-left: 5%;
+        margin-top: 4%;
+    }
+    .main-box-1{
+        border-bottom: 0px solid black;
+        margin-left: 10%;
+    }
+}
+@media screen and (max-width:900px){
+    .main-img{
+        margin-top: 7%;
+        /* max-width:100%; */
+    }
+}
